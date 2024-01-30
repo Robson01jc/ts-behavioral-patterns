@@ -1,7 +1,7 @@
-export class ProcessContext {
+export class ProcessContext<R = null> {
   constructor(
     private context: Map<string, any> = new Map<string, any>(),
-    private processResult: any = null
+    private processResult: R | null = null
   ) {}
 
   get<T>(key: string): T {
@@ -20,7 +20,7 @@ export class ProcessContext {
   put<T>(key: string, value: any): any {
     this.context.set(key, value);
 
-    return this.context.get(key);
+    return this.context.get(key) as T;
   }
 
   remove<T>(key: string): any {
@@ -28,7 +28,7 @@ export class ProcessContext {
     const value = this.context.get(key);
     this.context.delete(key);
 
-    return value;
+    return value as T;
   }
 
   reset(): void {
@@ -42,11 +42,11 @@ export class ProcessContext {
     this.context = newContext;
   }
 
-  setProcessResult(result: any): void {
+  setProcessResult(result: R): void {
     this.processResult = result;
   }
 
-  getProcessResult<T>(): T {
-    return this.processResult as T;
+  getProcessResult(): R | null {
+    return this.processResult;
   }
 }

@@ -1,1 +1,3 @@
-console.log('hello world');
+import { chainApp } from './chain/process/client';
+
+chainApp.main();
