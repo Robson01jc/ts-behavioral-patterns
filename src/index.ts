@@ -1,3 +1,3 @@
-import { chainApp } from './chain/process/client';
+import { mementoApp } from './memento/client';
 
-chainApp.main();
+mementoApp.main();
