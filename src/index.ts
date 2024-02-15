@@ -1,3 +1,3 @@
-import { mementoApp } from './memento/client';
+import { commandApp } from './command/client';
 
-mementoApp.main();
+commandApp.main();
