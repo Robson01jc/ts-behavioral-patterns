@@ -1,3 +1,5 @@
-import { commandApp } from './command/client';
+import { cartApp } from './iterator/cart/client';
+import { tvApp } from './iterator/tv/client';
 
-commandApp.main();
+tvApp.main();
+cartApp.main();
