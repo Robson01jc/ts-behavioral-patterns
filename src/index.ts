@@ -1,5 +1,3 @@
-import { cartApp } from './iterator/cart/client';
-import { tvApp } from './iterator/tv/client';
+import { mediatorApp } from './mediator/client';
 
-tvApp.main();
-cartApp.main();
+mediatorApp.main();

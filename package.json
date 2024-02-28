@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start:dev": "npx nodemon"
+    "cleanup": "rm -rf .parcel-cache && rm -rf `find src -type d -name dist`",
+    "start:dev": "npm run cleanup && npx nodemon"
   },
   "keywords": [],
   "author": "",
