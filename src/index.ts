@@ -1,3 +1,3 @@
-import { mediatorApp } from './mediator/client';
+import { observerApp } from './observer/client';
 
-mediatorApp.main();
+observerApp.main();
