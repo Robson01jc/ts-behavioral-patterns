@@ -9,6 +9,8 @@ export class OffState implements HeadPhoneState {
     return OffState.instance;
   }
 
+  private constructor() {}
+
   click(headPhone: HeadPhone): void {
     //Nothing to do!
   }

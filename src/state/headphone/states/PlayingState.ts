@@ -10,6 +10,8 @@ export class PlayingState implements HeadPhoneState {
     return PlayingState.instance;
   }
 
+  private constructor() {}
+
   click(headPhone: HeadPhone): void {
     headPhone.isPlaying = false;
     headPhone.state = OnState.getInstance();
