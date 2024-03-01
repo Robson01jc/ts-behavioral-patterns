@@ -1,3 +1,3 @@
-import { observerApp } from './observer/client';
+import { headPhoneApp } from './state/headphone/client';
 
-observerApp.main();
+headPhoneApp.main();
