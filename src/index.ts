@@ -1,5 +1,3 @@
-import { headPhoneApp } from './state/headphone/client';
-import { pacmanApp } from './state/pacman/client';
+import { strategyApp } from './strategy/client';
 
-headPhoneApp.main();
-pacmanApp.main();
+strategyApp.main();
